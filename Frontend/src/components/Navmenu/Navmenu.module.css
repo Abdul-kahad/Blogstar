@@ -1,0 +1,23 @@
+.NavLists{
+  display: flex;
+}
+
+.ListItem{
+  padding: 5px 10px;
+  font-weight: 500;
+  box-sizing: border-box;
+  border: 2px solid rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.ListItem:hover{
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+@media(width:425){
+    .NavLists{
+    display: none;
+  }
+}

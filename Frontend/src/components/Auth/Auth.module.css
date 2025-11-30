@@ -1,0 +1,14 @@
+.Login{
+  padding: 5px 10px;
+  font-weight: 500;
+  background-color: white;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  transition: 0.15s ease-in-out;
+}
+
+.Login:hover{
+  cursor: pointer;
+  background-color: rgb(216, 216, 216);
+}

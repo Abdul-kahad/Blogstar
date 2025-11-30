@@ -1,0 +1,52 @@
+.BlogerProfile {
+  width: 100%;
+  height: 350px;
+  background-color: rgb(245, 245, 245);
+  position: relative;
+}
+
+.BlogerProfile article{
+  margin-left: 250px;
+}
+
+.CoverPhoto{
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.Profile{
+  width: 200px;
+  position: absolute;
+  top: 25%;
+  left: 30px;
+  border-radius: 5px;
+}
+
+.PrivatePosts{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.BlogerPosts{
+  text-align: center;
+}
+
+.BlogerPosts h3{
+  margin-top: 20px;
+  font-size: 32px;
+}
+
+button{
+  cursor: pointer;
+}
+
+.createPostbtn{
+  margin-top: 10px;
+  width: 120px;
+}

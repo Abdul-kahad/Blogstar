@@ -1,0 +1,10 @@
+h1{
+  text-align: center;
+  margin: 10px auto;
+}
+
+.AdminDashboard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
