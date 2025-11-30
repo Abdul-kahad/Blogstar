@@ -12,7 +12,7 @@ const Body = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/");
+        const response = await axios.get("https://blogstar-195v.onrender.com");
         setBlogs(response.data);
         setServerMsg(response.data.message);
       } catch (error) {
@@ -25,7 +25,7 @@ const Body = () => {
 
   const deletePostHandler = async (blogId) => {
   try {
-    const response = await axios.delete(`http://localhost:3000/api/me/post/${blogId}`,{
+    const response = await axios.delete(`https://blogstar-195v.onrender.com/api/me/post/${blogId}`,{
       headers:{
         Authorization: `Bearer ${localStorage.getItem('accessToken')}`
       }

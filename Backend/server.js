@@ -10,12 +10,12 @@ const { allPosts, getSingleBlog, myProfile, createPost, updatePost, deletePost }
 dotenv.config()
 mongoDB()
 
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 3000
 
 const app = express()
 
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: ["http://localhost:5173", "https://Abdul-kahad.github.io"],
   credentials: true
 }));
 

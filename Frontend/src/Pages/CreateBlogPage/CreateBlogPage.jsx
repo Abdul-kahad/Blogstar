@@ -11,7 +11,7 @@ const CreateBlogPage = () => {
   const createPostHandler = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.post('http://localhost:3000/api/createPost', formData, {
+      const response = await axios.post('https://blogstar-195v.onrender.com/api/createPost', formData, {
         headers:{
           authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }

@@ -17,7 +17,7 @@ import { useNavigate } from 'react-router-dom';
       try {
         const token = localStorage.getItem('accessToken');
         const storedUser = JSON.parse(localStorage.getItem('user'));
-        const response = await axios.get('http://localhost:3000/api/me/profile',{
+        const response = await axios.get('https://blogstar-195v.onrender.com/api/me/profile',{
             headers: {
               Authorization: `Bearer ${token}`,
             },
@@ -37,7 +37,7 @@ import { useNavigate } from 'react-router-dom';
 
   const deletePostHandler = async (blogId) => {
   try {
-    const response = await axios.delete(`http://localhost:3000/api/me/post/${blogId}`,{
+    const response = await axios.delete(`https://blogstar-195v.onrender.com/api/me/post/${blogId}`,{
       headers:{
         Authorization: `Bearer ${localStorage.getItem('accessToken')}`
       }
