@@ -31,7 +31,7 @@ const Body = () => {
       }
     })
     setServerMsg(response.data.message)
-    navigate('/')
+    navigate('/blogstar')
     alert(JSON.stringify(serverMsg))
   } catch (error) {
     console.log(error.response?.data || error.message)

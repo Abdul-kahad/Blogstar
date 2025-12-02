@@ -53,7 +53,7 @@ const UpdateBlogPage = () => {
         }
       );
 
-      navigate("/");
+      navigate("/blogstar");
       alert(response.data.message);
 
     } catch (error) {
