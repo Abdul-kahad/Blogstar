@@ -15,6 +15,7 @@ const PORT = process.env.PORT || 3000
 const app = express()
 
 app.use(cors());
+app.use(express.static('../Frontend/dist'))
 
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
