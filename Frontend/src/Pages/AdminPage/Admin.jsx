@@ -10,7 +10,7 @@ import axios from 'axios'
   useEffect(() => {
     const getUsers = async () => {
      try {
-      const response = await axios.get('https://blogstar-195v.onrender.com/api/admin/dashboard', {
+      const response = await axios.get('https://blogstar-195v.onrender.com/Blogstar/api/admin/dashboard', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }
@@ -27,7 +27,7 @@ import axios from 'axios'
 
   const deleteUserHandler = async (uid) => {
     try {
-      const response = await axios.delete(`https://blogstar-195v.onrender.com/api/deleteUser/${uid}`, {
+      const response = await axios.delete(`https://blogstar-195v.onrender.com/Blogstar/api/deleteUser/${uid}`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem('accessToken')}`
       }

@@ -15,7 +15,7 @@ const LoginPage = () => {
   const loginHandler = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.post('https://blogstar-195v.onrender.com/api/login',formData)
+      const response = await axios.post('https://blogstar-195v.onrender.com/Blogstar/api/login',formData)
 
       setServerMsg(response.data.message)
       localStorage.setItem("accessToken", response.data.token);

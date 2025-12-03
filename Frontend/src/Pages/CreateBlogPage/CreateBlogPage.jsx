@@ -11,14 +11,14 @@ const CreateBlogPage = () => {
   const createPostHandler = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.post('https://blogstar-195v.onrender.com/api/createPost', formData, {
+      const response = await axios.post('https://blogstar-195v.onrender.com/Blogstar/api/createPost', formData, {
         headers:{
           authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }
       })
       setServerMSG(response.data.message)
       setFormData({title: '', body: ''})
-      navigate('/blogstar')
+      navigate('/')
       alert(JSON.stringify(serverMSG))
     } catch (error) {
       console.log(error.response?.data || error.message)

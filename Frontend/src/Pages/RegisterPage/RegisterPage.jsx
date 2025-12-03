@@ -14,7 +14,7 @@ const RegisterPage = () => {
   const registerHandler = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.post("https://blogstar-195v.onrender.com/api/register", formData)
+      const response = await axios.post("https://blogstar-195v.onrender.com/Blogstar/api/register", formData)
 
       console.log("Server Response:", response.data)
       console.log("Message:", response.data.message)

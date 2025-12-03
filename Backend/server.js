@@ -26,7 +26,7 @@ app.use(express.urlencoded({extended: false}))
 app.post('/api/register', register) 
 app.post('/api/login', login) 
 app.post('/api/createPost', authenticate, authorize(['Admin', 'User']), createPost) 
-app.get('/blogstar', allPosts) 
+app.get('/', allPosts) 
 app.get('/api/me/post/:id', authenticate, getSingleBlog); 
 app.get('/api/me/profile',authenticate, myProfile) 
 app.put('/api/me/post/:id',authenticate, updatePost) 
