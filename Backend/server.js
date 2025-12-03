@@ -13,7 +13,7 @@ mongoDB()
 const PORT = process.env.PORT || 3000
 
 const app = express()
-
+const allowedOrigin = ['https://abdul-kahad.github.io/Blogstar/', 'http://localhost:5173/Blogstar/'];
 app.use(cors({
     origin: allowedOrigin,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allow these HTTP methods
