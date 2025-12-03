@@ -14,8 +14,11 @@ const PORT = process.env.PORT || 3000
 
 const app = express()
 
-app.use(cors());
-app.use(express.static('../Frontend/dist'))
+app.use(cors({
+    origin: allowedOrigin,
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allow these HTTP methods
+    credentials: true // If you are sending cookies/authentication headers
+}));
 
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
