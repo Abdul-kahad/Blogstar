@@ -11,9 +11,9 @@ dotenv.config()
 mongoDB()
 
 const PORT = process.env.PORT || 3000
+const allowedOrigin = ['https://abdul-kahad.github.io/', 'http://localhost:5173/'];
 
 const app = express()
-const allowedOrigin = ['https://abdul-kahad.github.io/Blogstar/', 'http://localhost:5173/Blogstar/'];
 app.use(cors({
     origin: allowedOrigin,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allow these HTTP methods
@@ -26,7 +26,7 @@ app.use(express.urlencoded({extended: false}))
 app.post('/api/register', register) 
 app.post('/api/login', login) 
 app.post('/api/createPost', authenticate, authorize(['Admin', 'User']), createPost) 
-app.get('/', allPosts) 
+app.get('/Blogstar', allPosts) 
 app.get('/api/me/post/:id', authenticate, getSingleBlog); 
 app.get('/api/me/profile',authenticate, myProfile) 
 app.put('/api/me/post/:id',authenticate, updatePost) 

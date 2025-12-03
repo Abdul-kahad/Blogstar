@@ -12,7 +12,7 @@ const Body = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get("https://blogstar-195v.onrender.com/Blogstar");
+        const response = await axios.get('https://blogstar-195v.onrender.com/Blogstar');
         setBlogs(response.data);
         setServerMsg(response.data.message);
       } catch (error) {
@@ -31,7 +31,7 @@ const Body = () => {
       }
     })
     setServerMsg(response.data.message)
-    navigate('/')
+    navigate('/Blogstar') 
     alert(JSON.stringify(serverMsg))
   } catch (error) {
     console.log(error.response?.data || error.message)
