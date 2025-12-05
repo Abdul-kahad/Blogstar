@@ -11,14 +11,16 @@ dotenv.config()
 mongoDB()
 
 const PORT = process.env.PORT || 3000
-const allowedOrigin = ['https://abdul-kahad.github.io/', 'http://localhost:5173/'];
 
 const app = express()
-app.use(cors({
-    origin: allowedOrigin,
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allow these HTTP methods
-    credentials: true // If you are sending cookies/authentication headers
-}));
+
+app.use(
+  cors({
+    origin: ["http://localhost:5173", 'https://abdul-kahad.github.io'],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))

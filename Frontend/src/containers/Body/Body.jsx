@@ -25,7 +25,7 @@ const Body = () => {
 
   const deletePostHandler = async (blogId) => {
   try {
-    const response = await axios.delete(`https://blogstar-195v.onrender.com/Blogstar/api/me/post/${blogId}`,{
+    const response = await axios.delete(`https://blogstar-195v.onrender.com/api/me/post/${blogId}`,{
       headers:{
         Authorization: `Bearer ${localStorage.getItem('accessToken')}`
       }

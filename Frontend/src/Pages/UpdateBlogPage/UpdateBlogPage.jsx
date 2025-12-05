@@ -16,7 +16,7 @@ const UpdateBlogPage = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await axios.get(`https://blogstar-195v.onrender.com/Blogstar/api/me/post/${blogId}`,{
+        const response = await axios.get(`https://blogstar-195v.onrender.com/api/me/post/${blogId}`,{
             headers: {
               authorization: `Bearer ${localStorage.getItem("accessToken")}`,
             },
@@ -46,7 +46,7 @@ const UpdateBlogPage = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.put(`https://blogstar-195v.onrender.com/Blogstar/api/me/post/${blogId}`,formData,{
+      const response = await axios.put(`https://blogstar-195v.onrender.com/api/me/post/${blogId}`,formData,{
           headers: {
             authorization: `Bearer ${localStorage.getItem("accessToken")}`,
           },
