@@ -16,9 +16,13 @@ const app = express()
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", 'https://abdul-kahad.github.io'],
+    origin: [
+      "http://localhost:5173",
+      "https://abdul-kahad.github.io"
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 
