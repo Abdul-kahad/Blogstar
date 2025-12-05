@@ -12,7 +12,7 @@ const Body = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get('https://blogstar-195v.onrender.com/');
+        const response = await axios.get('https://blogstar-195v.onrender.com');
         setBlogs(response.data);
         setServerMsg(response.data.message);
       } catch (error) {
