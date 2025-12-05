@@ -18,7 +18,8 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://abdul-kahad.github.io"
+      "https://abdul-kahad.github.io",
+      "https://blogstarr.netlify.app"
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
