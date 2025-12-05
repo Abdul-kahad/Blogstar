@@ -18,7 +18,7 @@ const CreateBlogPage = () => {
       })
       setServerMSG(response.data.message)
       setFormData({title: '', body: ''})
-      navigate('/Blogstar') 
+      navigate('/') 
       alert(JSON.stringify(serverMSG))
     } catch (error) {
       console.log(error.response?.data || error.message)

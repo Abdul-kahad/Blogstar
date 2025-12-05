@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   // Essential for GitHub Pages deployment where 'Blogstar' is the repo name
-  base: '/Blogstar/', 
+  base: '/', 
 })

@@ -8,7 +8,7 @@ const Logo = () => {
     <span>
       <h2 
         className={classes.Logo}
-        onClick={() => navigate('/Blogstar') }
+        onClick={() => navigate('/') }
         >Blogstar</h2>
     </span>
   )

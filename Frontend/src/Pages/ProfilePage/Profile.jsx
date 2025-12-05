@@ -43,7 +43,7 @@ import { useNavigate } from 'react-router-dom';
       }
     })
     setServerMSG(response.data.message)
-    navigate('/Blogstar') 
+    navigate('/') 
     alert(JSON.stringify(serverMSG))
   } catch (error) {
     console.log(error.response?.data || error.message)
