@@ -10,6 +10,7 @@ const Navmenu = () => {
       </Link>
       <Link to={'/profile'} className={classes.ListItem}>
        Profile
+       
       </Link>
     </ul>
   )
