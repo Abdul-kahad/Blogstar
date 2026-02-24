@@ -11,9 +11,6 @@ const Navmenu = () => {
       <Link to={'/profile'} className={classes.ListItem}>
        Profile
       </Link>
-      <Link to={'/about'} className={classes.ListItem}>
-       About
-      </Link>
     </ul>
   )
 }

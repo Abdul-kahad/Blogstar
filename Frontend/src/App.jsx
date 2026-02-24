@@ -19,7 +19,6 @@ function App() {
         <Route path="/admin/dashboard" element={<Admin />} />
         <Route path="/me/createblog" element={<CreateBlogPage />} />
         <Route path="/me/updateblog/:blogId" element={<UpdateBlogPage />} />
-
       </Routes>
     </Layout>
   );

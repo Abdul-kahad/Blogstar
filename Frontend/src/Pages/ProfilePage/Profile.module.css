@@ -35,6 +35,7 @@
 
 .BlogerPosts{
   text-align: center;
+  min-height: 50dvh;
 }
 
 .BlogerPosts h3{
